@@ -1,0 +1,23 @@
+---
+import Header from "../components/Header.astro";
+import HeroSection from "../components/HeroSection.astro";
+import ChargeSection from "../components/ChargeSection.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Coches eléctricos, energía solar y limpia. Tesla España.">
+	<Header />
+	<main
+		class="snap-y snap-mandatory relative h-screen w-full overflow-auto scroll-smooth"
+	>
+		<div class="snap-start">
+			<HeroSection />
+		</div>
+		<div class="snap-start">
+			<ChargeSection />
+		</div>
+		<div class="snap-start">
+			<HeroSection />
+		</div>
+	</main>
+</Layout>
