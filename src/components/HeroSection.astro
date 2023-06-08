@@ -1,31 +1,25 @@
-<section
-   class="landing-section bg-black h-screen w-screen overflow-hidden text-center relative"
-   data-header-color="white"
+---
+import Section from "./Section.astro";
+---
+
+<Section
+   title="Disfrute de Tesla"
+   subtitle="Programe una prueba de conducción hoy mismo"
+   color="white"
 >
-   <div class="relative pt-[6rem] z-30 h-full flex flex-col">
-      <header>
-         <h2 class="text-white text-[39px] font-medium">Disfrute de Tesla</h2>
-         <p class="text-white text-sm">
-            Programe una prueba de conducción hoy mismo
-         </p>
-      </header>
-
-      <footer class="flex flex-col flex-grow justify-end pb-[5.7rem]">
-         <div>
-            <a
-               class="text-white text-sm border-[3px] border-white px-12 py-2 rounded hover:text-black hover:bg-white"
-               href="#">Prueba de conducción</a
-            >
-         </div>
-      </footer>
+   <div slot="footer">
+      <a
+         class="text-white text-sm border-[3px] border-white px-12 py-2 rounded hover:text-black hover:bg-white"
+         href="#">Prueba de conducción</a
+      >
    </div>
-
-   <div class="absolute top-0 bottom-0 z-10">
-      <video
-         class="object-center object-cover h-full w-full"
-         autoplay
-         muted
-         loop
-         src="teslavideoInicio.webm"></video>
-   </div>
-</section>
+   <video
+      slot="background"
+      class="object-center object-cover h-full w-full"
+      autoplay
+      muted
+      loop
+      src="teslavideoInicio.webm"
+   >
+   </video>
+</Section>
